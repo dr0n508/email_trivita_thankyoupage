@@ -1,3 +1,24 @@
+.bg {
+  background: $bg-color;
+  padding: 25px 10px;
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+  span { font-weight: 600}
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.hr {
+  border-color: transparent !important;
+  background-color: $bg-color;
+}
+
 h1 {
   font-weight: 400;
 }
@@ -5,11 +26,6 @@ h1 {
 .welcome-message {
   padding-right: 70px;
   padding-left: 70px;
-}
-
-.bg {
-  background: $bg-color;
-  padding: 25px 10px;
 }
 
 .order-info {
@@ -20,7 +36,6 @@ h1 {
 }
 
 .addresses {
-  //border-top: solid 1px black;
   h4 {
     text-transform: uppercase;
     font-weight: 600;
@@ -52,31 +67,15 @@ h1 {
   }
 }
 
-.small-text {
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 5px;
-  span { font-weight: 600}
-}
-
 .button-track-order a {
   padding-right: 80px;
   padding-left: 80px;
-}
-
-.bold {
-  font-weight: 600;
 }
 
 footer {
   p {
     margin-bottom: 5px;
   }
-}
-
-.hr {
-  border-color: transparent !important;
-  background-color: $bg-color;
 }
 
 .heed-help {
