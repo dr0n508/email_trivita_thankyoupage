@@ -18,63 +18,84 @@ subject: My Email Templates
 
     <row>
         <columns>
-            <spacer size="50"></spacer>
+            <spacer size="70" class="show-for-large"></spacer>
             <h1 class="text-center">Thank You</h1>
         </columns>
     </row>
 
     <row>
         <columns>
-            <p class="bg text-center">Soon you will receive your order and will be on your
+            <p class="welcome-message bg text-center">Soon you will receive your order and will be on your
                 way to greater muscle strength and vitality!</p>
         </columns>
     </row>
 
     <row>
         <columns>
-            <p>We will let you know by email once your order ships.</p>
+            <p class="text-center">We will let you know by email once your order ships.</p>
         </columns>
     </row>
 
     <row>
         <columns>
-            <h2>Your Order Receipt</h2>
+            <spacer size="20"></spacer>
+            <h3 class="text-center">Your Order Receipt</h3>
         </columns>
     </row>
 
     <row>
         <columns>
             <div class="bg">
-                <p>Order ID: <span>8888888</span></p>
-                <p>Order Date: <span>May 17, 2017</span></p>
+                <p class="order-info text-center"><span>Order ID: </span> 8888888</p>
+                <p class="order-info text-center"><span>Order Date: </span> May 17, 2017</p>
             </div>
 
         </columns>
     </row>
 
     <row>
-        <columns large="3">
+        <columns large="3" small="6">
+            <spacer size="20"></spacer>
             <center>
                 <img src="assets/img/vitamin-c.png" alt="vitamin-c">
             </center>
         </columns>
-        <columns large="6">
-            <p>VITAMIN C</p>
+        <columns large="9" small="6">
+            <spacer size="30"></spacer>
+            <p class="bold">VITAMIN C</p>
         </columns>
     </row>
-
     <row>
-        <columns large="6">
-            <p>BILLED TO:</p>
-            <p>Jane Doe</p>
-            <p>1234 E Main St</p>
-            <p>Scottsdale, AZ 85260</p>
+        <columns>
+            <hr class="hr">
+        </columns>
+    </row>
+    <row class="addresses">
+        <columns large="2">
+            <center>
+                <img src="assets/img/dollar-ico.png" alt="dollar-ico">
+            </center>
         </columns>
         <columns large="6">
-            <p>SHIPPING TO:</p>
-            <p>Jane Doe</p>
-            <p>1234 E Main St</p>
-            <p>Scottsdale, AZ 85260</p>
+            <spacer size="5"></spacer>
+            <h4 class="small-text-center">BILLED TO:</h4>
+            <p class="small-text-center">Jane Doe</p>
+            <p class="small-text-center">1234 E Main St</p>
+            <p class="small-text-center">Scottsdale, AZ 85260</p>
+            <spacer size="10"></spacer>
+        </columns>
+        <columns large="2">
+            <center>
+                <img src="assets/img/shipping-ico.png" class="float-left" alt="shipping-ico">
+            </center>
+        </columns>
+        <columns large="6">
+            <spacer size="5"></spacer>
+            <h4 class="small-text-center">SHIPPING TO:</h4>
+            <p class="small-text-center">Jane Doe</p>
+            <p class="small-text-center"> 1234 E Main St</p>
+            <p class="small-text-center">Scottsdale, AZ 85260</p>
+            <spacer size="10"></spacer>
         </columns>
     </row>
 
@@ -86,72 +107,43 @@ subject: My Email Templates
         <columns>
             <div class="bg">
                 <row>
-                    <columns class="bg">
-                        <h3>Order Details</h3>
-                    </columns>
-                </row>
-
-                <row>
-                    <columns small="2">
-                        <p>QTY</p>
-                    </columns>
-                    <columns small="4">
-                        <p>DESCRIPTION</p>
-                    </columns>
-                    <columns small="3">
-                        <p>PRICE</p>
-                    </columns>
-                    <columns small="3">
-                        <p>EXT</p>
-                    </columns>
-                </row>
-
-                <row>
-                    <columns small="2">
-                        <p>1</p>
-                    </columns>
-                    <columns small="4">
-                        <p>Shipping - Standard</p>
-                    </columns>
-                    <columns small="3">
-                        <p>14.25</p>
-                    </columns>
-                    <columns small="3">
-                        <p>14.25</p>
-                    </columns>
-                </row>
-
-                <row>
-                    <columns small="2">
-                        <p>1</p>
-                    </columns>
-                    <columns small="4">
-
-                        <p>Nopalea 4 pack</p>
-                    </columns>
-                    <columns small="3">
-
-
-                        <p>139.99</p>
-                    </columns>
-                    <columns small="3">
-
-
-                        <p>139.99</p>
-                    </columns>
-                </row>
-
-
-                <row>
                     <columns>
-                        <p>SUBTOTAL</p>
-                        <p>TAX</p>
-                        <p>TOTAL</p>
+                        <h4 class="text-center">Order Details</h4>
                     </columns>
-                    <columns>
-                        <p>154.24</p>
-                        <p>15.42</p>
-                        <p>169.66</p>
+                </row>
+
+                <row>
+                    <columns class="head" small="2"><p class="headers-column text-center">QTY</p></columns>
+                    <columns class="head" small="6"><p class="headers-column">DESCRIPTION</p></columns>
+                    <columns class="head" small="2"><p class="headers-column">PRICE</p></columns>
+                    <columns class="head" small="2"><p class="headers-column text-right">EXT</p></columns>
+                </row>
+
+                <row class="row-table">
+                    <columns small="2" valign="middle"><p class="text-center">1</p></columns>
+                    <columns small="6" valign="middle"><p>Shipping - Standard</p></columns>
+                    <columns small="2" valign="middle"><p>14.25</p></columns>
+                    <columns small="2" valign="middle"><p class="text-right">14.25</p></columns>
+                </row>
+
+                <row>
+                    <columns small="2" valign="middle"><p class="text-center">1</p></columns>
+                    <columns small="6" valign="middle"><p>Nopalea 4 pack</p></columns>
+                    <columns small="2" valign="middle"><p>139.99</p></columns>
+                    <columns small="2" valign="middle"><p class="text-right">139.99</p></columns>
+                </row>
+
+                <row>
+                    <columns small="6"></columns>
+                    <columns small="3">
+                        <p class="headers-column text-right">SUBTOTAL</p>
+                        <p class="headers-column text-right">TAX</p>
+                        <p class="headers-column text-right">TOTAL</p>
+                    </columns>
+                    <columns small="3">
+                        <p class="text-right">154.24</p>
+                        <p class="text-right">15.42</p>
+                        <p class="text-right">169.66</p>
                     </columns>
                 </row>
 
@@ -166,34 +158,41 @@ subject: My Email Templates
 <container>
     <row>
         <columns>
-            <p>ACCOUT NO: <span>15173034</span></p>
-            <p>VITAPOINTS EARNED:<span>200</span></p>
+            <p class="small-text"><span>ACCOUT NO: </span>15173034</p>
+            <p class="small-text"><span>VITAPOINTS EARNED: </span>200</p>
         </columns>
     </row>
 
     <row>
         <columns>
-            <button href="#">Track Your Order</button>
-        </columns>
-    </row>
-
-    <row>
-        <columns>
+            <spacer size="20"></spacer>
             <center>
-                <img src="assets/img/help-ico.png" alt="help-ico">
+                <button href="#" class="button-track-order text-center">Track Your Order</button>
             </center>
-        </columns>
-    </row>
 
-    <row>
-        <columns>
-            <h3>Need Help?</h3>
-            <p>memberservice@trivita.com</p>
-            <p>1-800-845-3214</p>
-            <p>Monday - Friday 10:00 a.m. to 8:00 p.m., EST</p>
-            <p>This email was sent from an automated system and cannot accept incoming email.</p>
         </columns>
     </row>
+    <footer>
+        <row>
+            <columns>
+                <center>
+                    <img src="assets/img/help-ico.png" alt="help-ico">
+                </center>
+            </columns>
+        </row>
+
+        <row>
+            <columns>
+                <h4 class="heed-help text-center bold">Need Help?</h4>
+                <p class="text-center"><a href="mailto:memberservice@trivita.com">memberservice@trivita.com</a></p>
+                <p class="text-center">1-800-845-3214</p>
+                <p class="text-center">Monday - Friday 10:00 a.m. to 8:00 p.m., EST</p>
+                <spacer size="20"></spacer>
+                <p class="text-center small-text">This email was sent from an automated system and cannot accept incoming email.</p>
+                <spacer size="20"></spacer>
+            </columns>
+        </row>
+    </footer>
 
 </container>
 
