@@ -3,7 +3,6 @@ layout: index-layout
 subject: My Email Templates
 ---
 
-
 <container>
 
     <row>
@@ -19,13 +18,14 @@ subject: My Email Templates
 
     <row>
         <columns>
-            <h1>Thank You</h1>
+            <spacer size="50"></spacer>
+            <h1 class="text-center">Thank You</h1>
         </columns>
     </row>
 
     <row>
         <columns>
-            <p>Soon you will receive your order and will be on your
+            <p class="bg text-center">Soon you will receive your order and will be on your
                 way to greater muscle strength and vitality!</p>
         </columns>
     </row>
@@ -44,8 +44,11 @@ subject: My Email Templates
 
     <row>
         <columns>
-            <p>Order ID: <span>8888888</span></p>
-            <p>Order Date: <span>May 17, 2017</span></p>
+            <div class="bg">
+                <p>Order ID: <span>8888888</span></p>
+                <p>Order Date: <span>May 17, 2017</span></p>
+            </div>
+
         </columns>
     </row>
 
@@ -75,29 +78,67 @@ subject: My Email Templates
         </columns>
     </row>
 
+
+</container>
+
+<container class="table">
     <row>
-        <h3>Order Details</h3>
-        <columns>
+        <columns >
+            <h3>Order Details</h3>
+        </columns>
+    </row>
+
+    <row>
+        <columns small="2">
             <p>QTY</p>
-            <p>1</p>
+        </columns>
+        <columns small="4">
+            <p>DESCRIPTION</p>
+        </columns>
+        <columns small="3">
+            <p>PRICE</p>
+        </columns>
+        <columns small="3">
+            <p>EXT</p>
+        </columns>
+    </row>
+
+    <row>
+        <columns small="2">
             <p>1</p>
         </columns>
-        <columns>
-            <p>DESCRIPTION</p>
+        <columns small="4">
             <p>Shipping - Standard</p>
+        </columns>
+        <columns small="3">
+            <p>14.25</p>
+        </columns>
+        <columns small="3">
+            <p>14.25</p>
+        </columns>
+    </row>
+
+    <row>
+        <columns small="2">
+            <p>1</p>
+        </columns>
+        <columns small="4">
+
             <p>Nopalea 4 pack</p>
         </columns>
-        <columns>
-            <p>PRICE</p>
-            <p>14.25</p>
+        <columns small="3">
+
+
             <p>139.99</p>
         </columns>
-        <columns>
-            <p>EXT</p>
-            <p>14.25</p>
+        <columns small="3">
+
+
             <p>139.99</p>
         </columns>
     </row>
+
+
     <row>
         <columns>
             <p>SUBTOTAL</p>
@@ -110,27 +151,30 @@ subject: My Email Templates
             <p>169.66</p>
         </columns>
     </row>
+</container>
 
+
+<container>
     <row>
         <columns>
             <p>ACCOUT NO: <span>15173034</span></p>
-                <p>VITAPOINTS EARNED:<span>200</span></p>
+            <p>VITAPOINTS EARNED:<span>200</span></p>
         </columns>
     </row>
 
     <row>
         <columns>
-            <a href="#" class="btn">Track Your Order</a>
+            <button href="#">Track Your Order</button>
         </columns>
     </row>
 
-    <!--<row>-->
-        <!--<columns>-->
-            <!--<center>-->
-                <!--<img src="assets/img/help-ico.png" alt="help-ico">-->
-            <!--</center>-->
-        <!--</columns>-->
-    <!--</row>-->
+    <row>
+        <columns>
+            <center>
+                <img src="assets/img/help-ico.png" alt="help-ico">
+            </center>
+        </columns>
+    </row>
 
     <row>
         <columns>
@@ -143,3 +187,11 @@ subject: My Email Templates
     </row>
 
 </container>
+
+
+
+
+
+
+
+
