@@ -1,0 +1,89 @@
+.logo {
+  width: 145px !important;
+  height: auto !important;
+}
+
+.report-img {
+  width: 100px !important;
+  height: auto !important;
+}
+
+.tiny-text {
+  font-size: 13px;
+  margin-bottom: 0 !important;
+}
+
+.no-padding-small {
+  @media screen and (max-width: 596px) {
+    padding-bottom: 0 !important;
+  }
+}
+
+.copyright-text {
+  font-size: 10px;
+  margin-bottom: 0;
+  line-height: 12px;
+}
+
+.white-text {
+  color: $white !important;
+}
+
+.gray-text {
+  color: #868686;
+}
+
+.blue-text {
+  color: #1592e6;
+}
+
+.black-text {
+  color: $black;
+}
+
+.underline-text {
+  text-decoration: underline;
+  color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-bottom {
+  border-bottom: solid 1px $greencolor;
+}
+
+.bg-gray {
+  background: $bg-gray !important;
+}
+
+hr {
+  color: #a6b5c5;
+  background-color:#a6b5c5;
+  border:0px none;
+  height:1px;
+  clear:both;
+}
+
+.banner {
+  background: $linkcolor !important;
+}
+
+.none-mb {
+  margin-bottom: 0;
+}
+
+.footer-top {
+  background-color: #97ba30;
+}
+
+.social-links {
+  padding-bottom: 0 !important;
+  img {
+    //float: right;
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 auto;
+  }
+}
